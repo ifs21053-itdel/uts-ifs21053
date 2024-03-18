@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">DinoPedia</string>
+
+    <!-- Parent item titles -->
+    <string-array name="parent_item_titles">
+        <item>Theropoda</item>
+        <item>Sauropoda</item>
+        <item>Ornithopoda</item>
+        <item>Ankylosauria</item>
+        <item>Ceratopsia</item>
+        <item>Pachycephalosauria</item>
+        <item>Hypsilophodontidae</item>
+        <item>Therizinosauridae</item>
+    </string-array>
+
+    <string-array name="child_item_images">
+        <item>@drawable/velociraptor</item>
+        <item>@drawable/archaeopteryx</item>
+    </string-array>
+
+
+    <!-- Child item titles for Theropoda -->
+    <string-array name="child_item_theropoda">
+        <item>Velociraptor</item>
+        <item>Archaeopteryx</item>
+    </string-array>
+
+    <!-- Child item titles for Sauropoda -->
+    <string-array name="child_item_sauropoda">
+        <item>Brachiosaurus</item>
+        <item>Diplodocus</item>
+    </string-array>
+
+    <!-- Child item titles for Ornithopoda -->
+    <string-array name="child_item_ornithopoda">
+        <item>Triceratops</item>
+        <item>Edmontosaurus</item>
+    </string-array>
+
+    <!-- Child item titles for Ankylosauria -->
+    <string-array name="child_item_ankylosauria">
+        <item>Stegosaurus</item>
+        <item>Nodosaurus</item>
+    </string-array>
+
+    <!-- Child item titles for Ceratopsia -->
+    <string-array name="child_item_ceratopsia">
+        <item>Centrosaurus</item>
+        <item>Styracosaurus</item>
+    </string-array>
+
+    <!-- Child item titles for Pachycephalosauria -->
+    <string-array name="child_item_pachycephalosauria">
+        <item>Stygimoloch</item>
+        <item>Dracorex</item>
+    </string-array>
+
+    <!-- Child item titles for Hypsilophodontidae -->
+    <string-array name="child_item_hypsilophodontidae">
+        <item>Hypsilophodon</item>
+        <item>Thescelosaurus</item>
+    </string-array>
+
+    <!-- Child item titles for Therizinosauridae -->
+    <string-array name="child_item_therizinosauridae">
+        <item>Nothronychus</item>
+        <item>Erlikosaurus</item>
+    </string-array>
+</resources>
