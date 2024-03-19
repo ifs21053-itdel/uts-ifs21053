@@ -1,8 +1,15 @@
 <resources>
     <string name="app_name">DinoPedia</string>
+    <string name="info_nama">Sport Icon</string>
+    <string name="info_icon">Deskripsi</string>
+    <string name="info_deskripsi">The Sport Name</string>
+    <string name="info_periode">History</string>
+    <string name="info_fisik">Rules</string>
+    <string name="info_habitat">Popular Athlete</string>
+    <string name="info_lingkungan">Rules</string>
+    <string name="info_prilaku">Popular Athlete</string>
 
-    <!-- Parent item titles -->
-    <string-array name="parent_item_titles">
+    <string-array name="family_nama">
         <item>Theropoda</item>
         <item>Sauropoda</item>
         <item>Ornithopoda</item>
@@ -13,57 +20,81 @@
         <item>Therizinosauridae</item>
     </string-array>
 
-    <string-array name="child_item_images">
-        <item>@drawable/velociraptor</item>
-        <item>@drawable/archaeopteryx</item>
+    <string-array name="family_icon">
+        <item>@drawable/_dino1</item>
+        <item>@drawable/_dino3</item>
+        <item>@drawable/_dino4</item>
+        <item>@drawable/_dino8</item>
+        <item>@drawable/_dino1</item>
+        <item>@drawable/_dino6</item>
+        <item>@drawable/_dino7</item>
+        <item>@drawable/_dino8</item>
     </string-array>
 
-
-    <!-- Child item titles for Theropoda -->
-    <string-array name="child_item_theropoda">
-        <item>Velociraptor</item>
-        <item>Archaeopteryx</item>
+    <string-array name="family_deskripsi">
+        <item>Predator berlari cepat dan ganas dengan kaki berotot dan cakar tajam.</item>
+        <item>Herbivora raksasa berleher panjang dan berekor panjang dengan tubuh besar dan berat.</item>
+        <item>Herbivora berlari cepat dengan kaki belakang kuat untuk melarikan diri dari pemangsa.</item>
+        <item>Herbivora berbadan berat dengan pelindung tulang seperti baju besi di punggung.</item>
+        <item>Herbivora berbadan besar dengan tanduk dan penutup kepala tebal </item>
+        <item>Herbivora dengan tengkorak tebal mungkin untuk bertarung antarkelas </item>
+        <item>Dinosaurus herbivora berukuran kecil dan gesit, berlari cepat dengan kaki belakang berotot.</item>
+        <item>Omnivora dengan cakar besar di tangan dan mungkin memakan tumbuhan dan daging.</item>
     </string-array>
 
-    <!-- Child item titles for Sauropoda -->
-    <string-array name="child_item_sauropoda">
-        <item>Brachiosaurus</item>
-        <item>Diplodocus</item>
+    <string-array name="family_periode">
+        <item>Trias Akhir - Kapur Akhir (230 - 66 juta tahun lalu)</item>
+        <item>Jura Awal - Kapur Akhir (201 - 66 juta tahun lalu)</item>
+        <item>Jura Awal - Kapur Akhir (201 - 66 juta tahun lalu)</item>
+        <item>Kapur Awal - Kapur Akhir (145 - 66 juta tahun lalu)</item>
+        <item>Kapur Akhir (76 - 66 juta tahun lalu)</item>
+        <item>Kapur Akhir (76 - 66 juta tahun lalu)</item>
+        <item>Jura Akhir - Kapur Akhir (157 - 66 juta tahun lalu)</item>
+        <item>Kapur Awal - Kapur Akhir (145 - 66 juta tahun lalu)</item>
     </string-array>
 
-    <!-- Child item titles for Ornithopoda -->
-    <string-array name="child_item_ornithopoda">
-        <item>Triceratops</item>
-        <item>Edmontosaurus</item>
+    <string-array name="family_fisik">
+    <item>Dinosaurus berkaki dua yang terkenal dengan kelincahan dan giginya yang tajam</item>
+    <item>Dinosaurus berleher panjang dan berekor panjang</item>
+    <item>Dinosaurus herbivora berkaki dua yang gesit dan memiliki paruh</item>
+    <item>Dinosaurus herbivora berkaki empat dengan badan berat dan pelindung tulang</item>
+    <item>Dinosaurus herbivora berkaki empat dengan tanduk dan penutup kepala tebal.</item>
+    <item>Dinosaurus herbivora berkaki dua dengan tengkorak tebal</item>
+    <item>Dinosaurus herbivora berukuran kecil dan gesit dengan kaki belakang berotot</item>
+    <item>Dinosaurus omnivora berkaki dua dengan cakar besar di tangannya. </item>
     </string-array>
 
-    <!-- Child item titles for Ankylosauria -->
-    <string-array name="child_item_ankylosauria">
-        <item>Stegosaurus</item>
-        <item>Nodosaurus</item>
+    <string-array name="family_habitat">
+        <item>Hutan, dataran luas, dan dekat sumber air.</item>
+        <item>Hutan lebat dan dataran banjir.</item>
+        <item>Hutan dan dataran luas.</item>
+        <item>Hutan dan daerah bervegetasi lebat</item>
+        <item> Dataran luas dan padang rumput</item>
+        <item>Hutan dan daerah bervegetasi lebat.</item>
+        <item>Hutan dan daerah tepi perairan</item>
+        <item>Hutan dan daerah bervegetasi lebat.</item>
     </string-array>
 
-    <!-- Child item titles for Ceratopsia -->
-    <string-array name="child_item_ceratopsia">
-        <item>Centrosaurus</item>
-        <item>Styracosaurus</item>
+    <string-array name="family_lingkungan">
+        <item>dari hutan lebat hingga padang rumput terbuka</item>
+        <item>Beriklim hangat dan lembab, dengan banyak tumbuhan tinggi</item>
+        <item>Beriklim hangat dan sedang</item>
+        <item>Beriklim hangat dan lembab</item>
+        <item>Beriklim sedang, dengan variasi tumbuhan seperti pakis</item>
+        <item>Beriklim hangat dan lembab, dengan variasi tumbuhan.</item>
+        <item>Beragam, dari hutan lebat hingga daerah berawa.</item>
+        <item>Beriklim hangat dan lembab</item>
     </string-array>
 
-    <!-- Child item titles for Pachycephalosauria -->
-    <string-array name="child_item_pachycephalosauria">
-        <item>Stygimoloch</item>
-        <item>Dracorex</item>
+    <string-array name="family_prilaku">
+        <item>Karnivora</item>
+        <item>Herbivora</item>
+        <item>Herbivora</item>
+        <item>Herbivora</item>
+        <item>Herbivora</item>
+        <item>Herbivora</item>
+        <item>Herbivora</item>
+        <item>Omnivora</item>
     </string-array>
 
-    <!-- Child item titles for Hypsilophodontidae -->
-    <string-array name="child_item_hypsilophodontidae">
-        <item>Hypsilophodon</item>
-        <item>Thescelosaurus</item>
-    </string-array>
-
-    <!-- Child item titles for Therizinosauridae -->
-    <string-array name="child_item_therizinosauridae">
-        <item>Nothronychus</item>
-        <item>Erlikosaurus</item>
-    </string-array>
 </resources>

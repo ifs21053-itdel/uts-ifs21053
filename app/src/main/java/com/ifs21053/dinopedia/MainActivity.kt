@@ -1,66 +1,90 @@
 package com.ifs21053.dinopedia
 
+import android.annotation.SuppressLint
+import android.content.Intent
+import android.content.res.Configuration
 import android.os.Bundle
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import com.ifs21053.dinopedia.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
-        val parentRecyclerViewItem: RecyclerView = findViewById(R.id.parent_recyclerview)
+        // Inflate layout using ViewBinding
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        // Initialise the Linear layout manager
-        val layoutManager = LinearLayoutManager(this)
+        // Set up RecyclerView
+        binding.rvFamily.setHasFixedSize(false)
 
-        // Pass the context and the list of parent items to the ParentItemAdapter constructor
-        val parentItemAdapter = ParentItemAdapter(this, getListParentItems())
+        // Set up list of Family and show them in RecyclerView
+        val dataFamily = getListFamily()
+        showRecyclerList(dataFamily)
 
-        // Set the layout manager and adapter for items
-        // of the parent recyclerview
-        parentRecyclerViewItem.adapter = parentItemAdapter
-        parentRecyclerViewItem.layoutManager = layoutManager
+        // Set up click listener for "About" TextView
+        val btnUser = findViewById<TextView>(R.id.menu_about)
+        btnUser.setOnClickListener {
+            val intent = Intent(this, AboutActivity::class.java)
+            startActivity(intent)
+        }
     }
 
-    private fun getListParentItems(): List<ParentItem> {
-        val parentItemTitles = resources.getStringArray(R.array.parent_item_titles)
+    @SuppressLint("Recycle")
+    private fun getListFamily(): ArrayList<Family> {
+        val dataNama = resources.getStringArray(R.array.family_nama)
+        val dataIcon = resources.obtainTypedArray(R.array.family_icon)
+        val dataDeskripsi = resources.getStringArray(R.array.family_deskripsi)
+        val dataPriode = resources.getStringArray(R.array.family_periode)
+        val dataFisik = resources.getStringArray(R.array.family_fisik)
+        val dataHabitat = resources.getStringArray(R.array.family_habitat)
+        val dataLingkungan = resources.getStringArray(R.array.family_lingkungan)
+        val dataPrilaku = resources.getStringArray(R.array.family_prilaku)
 
-        val listParentItems = ArrayList<ParentItem>()
-        for ((index, parentItemTitle) in parentItemTitles.withIndex()) {
-            val parentItem = ParentItem(parentItemTitle, getChildItemList(index))
-            listParentItems.add(parentItem)
+        val listFamily = ArrayList<Family>()
+        for (i in dataNama.indices) {
+            val family = Family(
+                dataNama[i],
+                dataIcon.getResourceId(i, -1),
+                dataDeskripsi[i],
+                dataPriode[i],
+                dataFisik[i],
+                dataHabitat[i],
+                dataLingkungan[i],
+                dataPrilaku[i]
+            )
+            listFamily.add(family)
         }
-        return listParentItems
+        return listFamily
     }
 
-    // Method to pass the arguments for the elements
-    // of child RecyclerView
-    private fun getChildItemList(parentItemIndex: Int): List<ChildItem> {
-        val childItemList = ArrayList<ChildItem>()
-
-        // Load child item array based on parent item index
-        val childItemArray = when (parentItemIndex) {
-            0 -> R.array.child_item_theropoda
-            1 -> R.array.child_item_sauropoda
-            2 -> R.array.child_item_ornithopoda
-            3 -> R.array.child_item_ankylosauria
-            4 -> R.array.child_item_ceratopsia
-            5 -> R.array.child_item_pachycephalosauria
-            6 -> R.array.child_item_hypsilophodontidae
-            7 -> R.array.child_item_therizinosauridae
-
-            else -> return childItemList // Return empty list if no matching index
+    private fun showRecyclerList(dataFamily: ArrayList<Family>) {
+        val layoutManager = if (resources.configuration.orientation ==
+            Configuration.ORIENTATION_LANDSCAPE) {
+            GridLayoutManager(this, 2)
+        } else {
+            LinearLayoutManager(this)
         }
 
-        // Load child items from the corresponding array
-        val childItemTitles = resources.getStringArray(childItemArray)
-        for (childItemTitle in childItemTitles) {
-            childItemList.add(ChildItem(childItemTitle))
-        }
+        binding.rvFamily.layoutManager = layoutManager
+        val listFamilyAdapter = ListFamilyAdapter(dataFamily)
+        binding.rvFamily.adapter = listFamilyAdapter
+        listFamilyAdapter.setOnItemClickCallback(object : ListFamilyAdapter.OnItemClickCallback {
+            override fun onItemClicked(data: Family) {
+                showSelectedFamily(data)
+            }
+        })
+    }
 
-        return childItemList
+    private fun showSelectedFamily(family: Family) {
+        val intentWithData = Intent(this@MainActivity, DetailActivity::class.java)
+        intentWithData.putExtra(DetailActivity.EXTRA_FAMILY, family)
+        startActivity(intentWithData)
     }
 }
