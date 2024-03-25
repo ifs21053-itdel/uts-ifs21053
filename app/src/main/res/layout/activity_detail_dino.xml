@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:contentDescription="@string/app_name"
-    tools:context=".DetailActivity">
+    tools:context=".DetailActivityDino">
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -14,16 +15,17 @@
         android:paddingBottom="50dp"
         tools:ignore="ExtraText">
 
-                            <ImageView
+        <ImageView
             android:id="@+id/ivDetailIcon"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginTop="70dp"
-            android:contentDescription="@string/info_icon"
-            android:src="@drawable/_dino3"
+            android:contentDescription="@string/gambar_dino"
+            android:src="@drawable/_anak7"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="ImageContrastCheck" />
 
@@ -31,7 +33,7 @@
             android:id="@+id/tvDetailName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/info_nama"
+            android:text="@string/nama_dino"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -46,7 +48,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
-            android:text="@string/info_deskripsi"
+            android:text="@string/deskripsi_dino"
             android:textAlignment="textStart"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -59,7 +61,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
-            android:text="Periode"
+            android:text="Karakteristik"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -67,12 +69,12 @@
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/tvPeriode"
+            android:id="@+id/tvKarakteristik"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:text="@string/info_periode"
+            android:text="@string/karakteristik_dino"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -84,19 +86,19 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
-            android:text="Ciri Fisik"
+            android:text="Kelompok Dinosaurus"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvPeriode" />
+            app:layout_constraintTop_toBottomOf="@+id/tvKarakteristik" />
 
         <TextView
-            android:id="@+id/tvFisik"
+            android:id="@+id/tvKelompok"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:text="@string/info_fisik"
+            android:text="@string/kelompok_dino"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -112,7 +114,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvFisik" />
+            app:layout_constraintTop_toBottomOf="@+id/tvKelompok" />
 
         <TextView
             android:id="@+id/tvHabitat"
@@ -120,7 +122,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:text="@string/info_habitat"
+            android:text="@string/habitat_dino"
             android:textAlignment="textStart"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -128,73 +130,148 @@
             app:layout_constraintTop_toBottomOf="@+id/tvTitle3" />
 
         <TextView
-            android:id="@+id/tvLingkunganTitle"
+            android:id="@+id/tvTitle4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
-            android:text="Lingkungan Hidup"
+            android:text="Makanan Dinosaurus"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvHabitat" />
 
         <TextView
-            android:id="@+id/tvLingkungan"
+            android:id="@+id/tvMakanan"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:text="@string/info_lingkungan"
+            android:text="@string/makanan_dino"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvLingkunganTitle" />
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle4" />
 
         <TextView
-            android:id="@+id/tvPrilakuTitle"
+            android:id="@+id/tvTitle5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
-            android:text="Perilaku"
+            android:text="Panjang Dinosaurus"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvLingkungan" />
+            app:layout_constraintTop_toBottomOf="@+id/tvMakanan" />
 
         <TextView
-            android:id="@+id/tvPrilaku"
+            android:id="@+id/tvPanjang"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:text="@string/info_prilaku"
+            android:text="@string/panjang_dino"
             android:textAlignment="textStart"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvPrilakuTitle" />
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle5" />
+
+        <TextView
+            android:id="@+id/tvTitle6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Tinggi Dinosaurus"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPanjang" />
+
+        <TextView
+            android:id="@+id/tvTinggi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/tinggi_dino"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle6" />
+
+        <TextView
+            android:id="@+id/tvTitle7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Bobot Dinosaurus"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTinggi" />
+
+        <TextView
+            android:id="@+id/tvBobot"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/bobot_dino"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle7" />
+
+        <TextView
+            android:id="@+id/tvTitle8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Kelemahan Dinosaurus"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvBobot" />
+
+        <TextView
+            android:id="@+id/tvKelemahan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/kelemahan_dino"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle8" />
 
         <Button
-            android:id="@+id/buttonDino1"
+            android:id="@+id/buttonDinoAnak"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="60dp"
-            android:text="Dino"
+            android:text="Family"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvPrilaku" />
+            app:layout_constraintTop_toBottomOf="@+id/tvKelemahan" />
 
         <Button
-            android:id="@+id/btnKembali"
+            android:id="@+id/btnKembaliDino"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
             android:layout_marginTop="24dp"
             android:text="Kembali"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvPrilaku" />
+            app:layout_constraintTop_toBottomOf="@+id/tvKelemahan" />
 
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"

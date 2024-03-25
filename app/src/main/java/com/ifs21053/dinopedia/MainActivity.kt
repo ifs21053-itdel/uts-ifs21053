@@ -1,3 +1,7 @@
+//Nama      : Grase Thessalonika Panjaitan
+//NIM       : 11S21053
+//Materi    : Perbaikan Ujian Tengah Semester PAM
+
 package com.ifs21053.dinopedia
 
 import android.annotation.SuppressLint
@@ -46,6 +50,8 @@ class MainActivity : AppCompatActivity() {
         val dataHabitat = resources.getStringArray(R.array.family_habitat)
         val dataLingkungan = resources.getStringArray(R.array.family_lingkungan)
         val dataPrilaku = resources.getStringArray(R.array.family_prilaku)
+        val mulai = resources.getStringArray(R.array.start)
+        val selesai = resources.getStringArray(R.array.end)
 
         val listFamily = ArrayList<Family>()
         for (i in dataNama.indices) {
@@ -57,7 +63,9 @@ class MainActivity : AppCompatActivity() {
                 dataFisik[i],
                 dataHabitat[i],
                 dataLingkungan[i],
-                dataPrilaku[i]
+                dataPrilaku[i],
+                mulai[i].toInt(),
+                selesai[i].toInt(),
             )
             listFamily.add(family)
         }

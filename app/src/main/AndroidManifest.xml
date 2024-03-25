@@ -12,25 +12,43 @@
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.DinoPedia"
         tools:targetApi="31">
+
+        <activity
+            android:name=".StartActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivityDino"
+            android:exported="false" />
+        <activity
+            android:name=".DetailActivityDino"
+            android:exported="false" />
         <activity
             android:name=".MainMenu"
-            android:exported="false" />
-        <!-- AboutActivity ditempatkan di luar elemen DetailActivity -->
+            android:exported="false" /> <!-- AboutActivity ditempatkan di luar elemen DetailActivity -->
         <activity
             android:name=".AboutActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".DetailActivity"
-            android:exported="true"></activity>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

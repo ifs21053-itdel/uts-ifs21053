@@ -1,3 +1,7 @@
+//Nama      : Grase Thessalonika Panjaitan
+//NIM       : 11S21053
+//Materi    : Perbaikan Ujian Tengah Semester PAM
+
 package com.ifs21053.dinopedia
 
 import android.content.Context

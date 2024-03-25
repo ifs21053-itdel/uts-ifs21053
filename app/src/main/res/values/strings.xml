@@ -1,13 +1,27 @@
 <resources>
+    <!--FAMILY INFO-->
     <string name="app_name">DinoPedia</string>
-    <string name="info_nama">Sport Icon</string>
-    <string name="info_icon">Deskripsi</string>
-    <string name="info_deskripsi">The Sport Name</string>
-    <string name="info_periode">History</string>
-    <string name="info_fisik">Rules</string>
-    <string name="info_habitat">Popular Athlete</string>
-    <string name="info_lingkungan">Rules</string>
-    <string name="info_prilaku">Popular Athlete</string>
+    <string name="info_nama">Nama Family</string>
+    <string name="info_icon">Icon Family</string>
+    <string name="info_deskripsi">Deskripsi Family</string>
+    <string name="info_periode">Periode Family</string>
+    <string name="info_fisik">Fisik Family</string>
+    <string name="info_habitat">Habitat Family</string>
+    <string name="info_lingkungan">Lingkungan Family</string>
+    <string name="info_prilaku">Prilaku Family</string>
+
+    <!--DINO INFO-->
+    <string name="nama_dino">Nama Dinosaurus</string>
+    <string name="gambar_dino">Gambar Dinosaurus</string>
+    <string name="deskripsi_dino">Deskripsi Dinosaurus</string>
+    <string name="karakteristik_dino">Karakteristik Dinosaurus</string>
+    <string name="kelompok_dino">Kelompok Dinosaurus</string>
+    <string name="habitat_dino">Habitat Dinosaurus</string>
+    <string name="makanan_dino">Makanan Dinosaurus</string>
+    <string name="panjang_dino">Panjang Dinosaurus</string>
+    <string name="tinggi_dino">Tinggi Dinosaurus</string>
+    <string name="bobot_dino">Bobot Dinosaurus</string>
+    <string name="kelemahan_dino">Kelemahan Dinosaurus</string>
 
     <string-array name="family_nama">
         <item>Theropoda</item>
@@ -22,10 +36,10 @@
 
     <string-array name="family_icon">
         <item>@drawable/_dino1</item>
+        <item>@drawable/_dino2</item>
         <item>@drawable/_dino3</item>
         <item>@drawable/_dino4</item>
-        <item>@drawable/_dino8</item>
-        <item>@drawable/_dino1</item>
+        <item>@drawable/_dino5</item>
         <item>@drawable/_dino6</item>
         <item>@drawable/_dino7</item>
         <item>@drawable/_dino8</item>
@@ -54,14 +68,14 @@
     </string-array>
 
     <string-array name="family_fisik">
-    <item>Dinosaurus berkaki dua yang terkenal dengan kelincahan dan giginya yang tajam</item>
-    <item>Dinosaurus berleher panjang dan berekor panjang</item>
-    <item>Dinosaurus herbivora berkaki dua yang gesit dan memiliki paruh</item>
-    <item>Dinosaurus herbivora berkaki empat dengan badan berat dan pelindung tulang</item>
-    <item>Dinosaurus herbivora berkaki empat dengan tanduk dan penutup kepala tebal.</item>
-    <item>Dinosaurus herbivora berkaki dua dengan tengkorak tebal</item>
-    <item>Dinosaurus herbivora berukuran kecil dan gesit dengan kaki belakang berotot</item>
-    <item>Dinosaurus omnivora berkaki dua dengan cakar besar di tangannya. </item>
+        <item>Dinosaurus berkaki dua yang terkenal dengan kelincahan dan giginya yang tajam</item>
+        <item>Dinosaurus berleher panjang dan berekor panjang</item>
+        <item>Dinosaurus herbivora berkaki dua yang gesit dan memiliki paruh</item>
+        <item>Dinosaurus herbivora berkaki empat dengan badan berat dan pelindung tulang</item>
+        <item>Dinosaurus herbivora berkaki empat dengan tanduk dan penutup kepala tebal.</item>
+        <item>Dinosaurus herbivora berkaki dua dengan tengkorak tebal</item>
+        <item>Dinosaurus herbivora berukuran kecil dan gesit dengan kaki belakang berotot</item>
+        <item>Dinosaurus omnivora berkaki dua dengan cakar besar di tangannya. </item>
     </string-array>
 
     <string-array name="family_habitat">
@@ -97,4 +111,235 @@
         <item>Omnivora</item>
     </string-array>
 
+    <string-array name="dino_nama">
+        <item>TRex</item>
+        <item>Velociraptor</item>
+        <item>Brachiosaurus</item>
+        <item>Diplodocus</item>
+        <item>Triceratops</item>
+        <item>Parasaurolophus</item>
+        <item>Ankylosaurus</item>
+        <item>Nodosaurus</item>
+        <item>Styracosaurus</item>
+        <item>Centrosaurus</item>
+        <item>Pachycephalosaurus</item>
+        <item>Dracorex</item>
+        <item>Orodromeus</item>
+        <item>Parksosaurus</item>
+        <item>Therizinosaurus</item>
+        <item>likosaurus</item>
+    </string-array>
+
+    <string-array name="start">
+        <item>0</item>
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+    </string-array>
+
+    <string-array name="end">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>7</item>
+        <item>9</item>
+        <item>11</item>
+        <item>13</item>
+        <item>15</item>
+    </string-array>
+
+
+    <string-array name="dino_foto">
+        <item>@drawable/_anak3</item>
+        <item>@drawable/_anak2</item>
+        <item>@drawable/_anak1</item>
+        <item>@drawable/_anak4</item>
+        <item>@drawable/_anak5</item>
+        <item>@drawable/_anak6</item>
+        <item>@drawable/_anak7</item>
+        <item>@drawable/_anak8</item>
+        <item>@drawable/_anak9</item>
+        <item>@drawable/_anak10</item>
+        <item>@drawable/_anak11</item>
+        <item>@drawable/_anak12</item>
+        <item>@drawable/_anak13</item>
+        <item>@drawable/_anak14</item>
+        <item>@drawable/_anak1</item>
+        <item>@drawable/_anak16</item>
+    </string-array>
+
+    <string-array name="dino_deskripsi">
+        <item>Tyrannosaurus Rex, sering disingkat sebagai T-Rex, adalah salah satu dinosaurus yang paling terkenal. Ini adalah dinosaurus karnivora besar yang hidup selama periode Kapur Akhir.</item>
+        <item>Velociraptor adalah dinosaurus kecil dan lincah yang dikenal dengan cakar berbentuk sabitnya yang khas di setiap kakinya. Ini hidup selama periode Kapur Akhir dan terkenal karena penggambarannya dalam budaya populer, meskipun sering tidak akurat.</item>
+        <item>Brachiosaurus adalah dinosaurus sauropoda raksasa dengan leher panjang dan ekor relatif pendek. Ini hidup selama periode Jura Akhir dan merupakan salah satu hewan darat terbesar yang pernah ada.</item>
+        <item>Diplodocus adalah dinosaurus herbivora berleher panjang yang hidup selama periode Jura Akhir. Ini memiliki ekor panjang seperti cambuk dan merupakan salah satu dinosaurus terpanjang yang diketahui.</item>
+        <item>Triceratops adalah dinosaurus herbivora besar yang dikenal dengan tiga tanduk wajahnya dan lambung tulang. Ini hidup selama periode Kapur Akhir dan merupakan salah satu spesies dinosaurus terakhir yang ada sebelum peristiwa kepunahan massal.</item>
+        <item>Parasaurolophus adalah dinosaurus herbivora yang dikenal dengan jumbai panjang dan berongga di kepalanya, yang mungkin digunakan untuk komunikasi atau tampilan. Ini hidup selama periode Kapur Akhir.</item>
+        <item>Ankylosaurus adalah dinosaurus berlapis bercangkang dengan gada tulang di ujung ekornya. Ini hidup selama periode Kapur Akhir dan sangat cocok untuk bertahan dari predator.</item>
+        <item>Nodosaurus adalah dinosaurus herbivora yang dilapisi pelat tulang atau nodul untuk perlindungan. Ini hidup selama periode Kapur Akhir dan berhubungan erat dengan Ankylosaurus.</item>
+        <item>Centrosaurus adalah dinosaurus herbivora yang dikenal dengan tanduk hidungnya yang menonjol. Ini hidup selama periode Kapur Akhir dan merupakan bagian dari keluarga ceratopsid.</item>
+        <item>Pachycephalosaurus adalah dinosaurus bipedal dengan tengkorak tebal dan kubah, mungkin digunakan untuk kontes pukulan kepala atau tampilan. Ini hidup selama periode Kapur Akhir.</item>
+        <item>Dracorex adalah dinosaurus relatif kecil yang dikenal dengan ornamen tengkoraknya yang rumit. Ini hidup selama periode Kapur Akhir dan kadang-kadang dianggap sebagai bentuk juvenil dari dinosaurus lain, seperti Pachycephalosaurus.</item>
+        <item>Orodromeus adalah dinosaurus kecil dan cepat yang kemungkinan besar memakan tumbuhan. Ini hidup selama periode Kapur Akhir dan merupakan bagian dari keluarga ornitopoda.</item>
+        <item>Parksosaurus adalah dinosaurus kecil yang herbivora dengan mulut berbentuk paruh. Ini hidup selama periode Kapur Akhir dan mirip dalam penampilan dengan ornitopoda lainnya.</item>
+        <item>Therizinosaurus adalah dinosaurus herbivora besar dengan cakar panjang, mungkin digunakan untuk pertahanan atau mengumpulkan makanan. Ini hidup selama periode Kapur Akhir dan sering digambarkan sebagai salah satu dinosaurus paling aneh.</item>
+        <item>Erlikosaurus adalah dinosaurus theropoda dengan leher panjang dan kepala relatif kecil. Ini hidup selama periode Kapur Awal dan dinamai dari Erlik, dewa kematian dalam mitologi Turk.</item>
+        <item>Likosaurus adalah salah satu dinosaurus terkecil yang pernah ditemukan dan kerabat dekat Tyrannosaurus Rex.</item>
+    </string-array>
+
+    <string-array name="dino_karakteristik">
+        <item>Karnivora besar, kuat, dengan gigi runcing dan rahang yang kuat.</item>
+        <item>Dinosaurus kecil dan lincah, memiliki cakar berbentuk sabit yang mematikan.</item>
+        <item>Sauropoda raksasa dengan leher panjang, makanan utama adalah tumbuhan tinggi.</item>
+        <item>Herbivora berleher panjang, memiliki tubuh besar dengan ekor cambuk.</item>
+        <item>Herbivora besar dengan tiga tanduk dan lambung tulang yang kuat.</item>
+        <item>Herbivora dengan jumbai panjang di kepalanya, mungkin digunakan untuk suara panggilan.</item>
+        <item>Dinosaurus berlapis bercangkang, dilengkapi dengan gada di ekornya untuk bertahan dari predator.</item>
+        <item>Dilapisi dengan pelat tulang atau nodul, memberikan perlindungan tambahan dari serangan predator.</item>
+        <item>Dinosaurus herbivora dengan tanduk hidung yang menonjol, mungkin digunakan untuk menunjukkan status atau komunikasi.</item>
+        <item>Dinosaurus dengan tengkorak tebal, sering kali digunakan untuk pertarungan kepala atau tampilan.</item>
+        <item>Dinosaurus relatif kecil dengan ornamen tengkorak yang rumit, mungkin untuk menarik pasangan atau menakuti predator.</item>
+        <item>Dinosaurus kecil dan cepat yang memakan tumbuhan, sering kali menghindari pemangsa dengan kecepatan dan ketangkasan.</item>
+        <item>Dinosaurus kecil dengan mulut berbentuk paruh, mungkin digunakan untuk makan tumbuhan rendah dan semak-semak.</item>
+        <item>Dinosaurus herbivora besar dengan cakar panjang, mungkin digunakan untuk memetik dedaunan tinggi atau untuk bertahan dari predator.</item>
+        <item>Dinosaurus theropoda dengan leher panjang, mungkin berburu dalam kelompok dan menggunakan kecepatan serta kecerdasan untuk menangkap mangsa.</item>
+        <item>Dinosaurus Likosaurus Memiliki cakar tajam di kaki depannya untuk menyerang dan memanjat dan gigi tajam dan melengkung untuk berburu mangsa. </item>
+    </string-array>
+
+    <string-array name="dino_kelompok">
+        <item>Theropoda</item>
+        <item>Theropoda</item>
+        <item>Sauropoda</item>
+        <item>Sauropoda</item>
+        <item>Ornithopoda</item>
+        <item>Ornithopoda</item>
+        <item>Ankylosauria</item>
+        <item>Ankylosauria</item>
+        <item>Ceratopsia</item>
+        <item>Ceratopsia</item>
+        <item>Pachycephalosauria</item>
+        <item>Pachycephalosauria</item>
+        <item>Hypsilophodontidae</item>
+        <item>Hypsilophodontidae</item>
+        <item>Therizinosauridae</item>
+        <item>Therizinosauridae</item>
+    </string-array>
+
+    <string-array name="dino_habitat">
+        <item>Hutan dan daerah dataran rendah</item>
+        <item>Padang rumput terbuka dan hutan belukar</item>
+        <item>Daerah berhutan dengan vegetasi tinggi</item>
+        <item>Daerah rawa-rawa dan lahan basah</item>
+        <item>Padang rumput dan daerah bersemak</item>
+        <item>Daerah berhutan dengan air yang cukup</item>
+        <item>Lahan terbuka dan daerah berbatu</item>
+        <item>Daerah dataran rendah dengan vegetasi lebat</item>
+        <item>Hutan belukar dan daerah berawa</item>
+        <item>Daerah bersemak dan padang rumput</item>
+        <item>Hutan hujan dan daerah berawa</item>
+        <item>Padang rumput terbuka dan dataran rendah</item>
+        <item>Daerah berbukit dengan vegetasi tinggi</item>
+        <item>Hutan hujan dan daerah berawa</item>
+        <item>Padang rumput terbuka dan dataran rendah</item>
+        <item>Daerah berbukit dengan vegetasi tinggi</item>
+    </string-array>
+
+    <string-array name="dino_makanan">
+        <item>Daging hewan herbivora dan kadang-kadang dinosaurus lain</item>
+        <item>Burung, mamalia kecil, dan hewan kecil lainnya</item>
+        <item>Daun-daunan dan tanaman tinggi</item>
+        <item>Daun, tunas, dan tanaman rendah</item>
+        <item>Tumbuhan rendah, semak, dan tanaman berbunga</item>
+        <item>Tumbuhan, seperti lumut, paku, dan tanaman berbunga</item>
+        <item>Daun, tunas, dan tanaman berair</item>
+        <item>Tumbuhan rendah, semak, dan tanaman berair</item>
+        <item>Daun, tunas, dan tanaman berair</item>
+        <item>Tumbuhan rendah, semak, dan tanaman berbunga</item>
+        <item>Tumbuhan, seperti paku dan tanaman berbunga</item>
+        <item>Tumbuhan rendah, semak, dan tanaman berbunga</item>
+        <item>Tumbuhan rendah, semak, dan tanaman berbunga</item>
+        <item>Tumbuhan, seperti paku dan tanaman berbunga</item>
+        <item>Tumbuhan rendah, semak, dan tanaman berbunga</item>
+        <item>Tumbuhan rendah, semak, dan tanaman berbunga</item>
+    </string-array>
+
+    <string-array name="dino_panjang">
+        <item>Sekitar 1200 cm</item>
+        <item>Antara 200 hingga 300 cm</item>
+        <item>Antara 1800 hingga 2400 cm</item>
+        <item>Antara 2000 hingga 2700 cm</item>
+        <item>Antara 700 hingga 900 cm</item>
+        <item>Antara 900 hingga 1100 cm</item>
+        <item>Antara 600 hingga 800 cm</item>
+        <item>Antara 500 hingga 600 cm</item>
+        <item>Antara 700 hingga 900 cm</item>
+        <item>Antara 400 hingga 500 cm</item>
+        <item>Antara 150 hingga 200 cm</item>
+        <item>Antara 300 hingga 400 cm</item>
+        <item>Antara 200 hingga 300 cm</item>
+        <item>Antara 200 hingga 300 cm</item>
+        <item>Antara 800 hingga 1000 cm</item>
+        <item>Antara 600 hingga 900 cm</item>
+    </string-array>
+
+    <string-array name="dino_tinggi">
+        <item>Tinggi sekitar 400 cm</item>
+        <item>Tinggi antara 100 hingga 200 cm</item>
+        <item>Tinggi antara 900 hingga 1200 cm</item>
+        <item>Tinggi antara 800 hingga 1000 cm</item>
+        <item>Tinggi antara 300 hingga 400 cm</item>
+        <item>Tinggi antara 400 hingga 500 cm</item>
+        <item>Tinggi antara 300 hingga 400 cm</item>
+        <item>Tinggi antara 300 hingga 400 cm</item>
+        <item>Tinggi antara 400 hingga 500 cm</item>
+        <item>Tinggi antara 200 hingga 300 cm</item>
+        <item>Tinggi antara 100 hingga 150 cm</item>
+        <item>Tinggi antara 200 hingga 300 cm</item>
+        <item>Tinggi antara 150 hingga 200 cm</item>
+        <item>Tinggi antara 150 hingga 200 cm</item>
+        <item>Tinggi antara 600 hingga 800 cm</item>
+        <item>Tinggi antara 400 hingga 600 cm</item>
+    </string-array>
+
+    <string-array name="dino_bobot">
+        <item>Antara 6000 hingga 9000 kg</item>
+        <item>Antara 15 hingga 30 kg</item>
+        <item>Antara 30000 hingga 50000 kg</item>
+        <item>Antara 25000 hingga 40000 kg</item>
+        <item>Antara 6000 hingga 9000 kg</item>
+        <item>Antara 7000 hingga 12000 kg</item>
+        <item>Antara 3000 hingga 6000 kg</item>
+        <item>Antara 2000 hingga 4000 kg</item>
+        <item>Antara 5000 hingga 10000 kg</item>
+        <item>Antara 500 hingga 1000 kg</item>
+        <item>Antara 50 hingga 100 kg</item>
+        <item>Antara 200 hingga 400 kg</item>
+        <item>Antara 150 hingga 300 kg</item>
+        <item>Antara 150 hingga 300 kg</item>
+        <item>Antara 3000 hingga 5000 kg</item>
+        <item>Antara 2000 hingga 4000 kg</item>
+    </string-array>
+
+    <string-array name="dino_kelemahan">
+        <item>Ukuran besar dan mungkin kecepatan yang terbatas</item>
+        <item>Ukuran kecil dan rentan terhadap predator lain</item>
+        <item>Pergerakan lambat dan rentan terhadap serangan predator besar</item>
+        <item>Ukuran besar dan mungkin rentan terhadap penyakit atau kelaparan</item>
+        <item>Ukuran besar dan mungkin rentan terhadap serangan predator besar</item>
+        <item>Ukuran besar dan rentan terhadap penyakit atau kelaparan</item>
+        <item>Perlindungan yang terbatas terhadap serangan predator besar</item>
+        <item>Rentan terhadap serangan predator besar</item>
+        <item>Ukuran besar dan mungkin kecepatan yang terbatas</item>
+        <item>Ukuran kecil dan rentan terhadap predator lain</item>
+        <item>Kecepatan yang rendah dan mungkin rentan terhadap serangan predator cepat</item>
+        <item>Ukuran kecil dan mungkin rentan terhadap predator lain</item>
+        <item>Ukuran kecil dan mungkin rentan terhadap predator lain</item>
+        <item>Ukuran besar dan mungkin kecepatan yang terbatas</item>
+        <item>Perlindungan yang terbatas terhadap serangan predator besar</item>
+        <item>Rentan terhadap serangan predator besar</item>
+    </string-array>
 </resources>
